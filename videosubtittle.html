@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+              background-image: url(sos.webp);
+            }
+            
+          </style>
+        <title>5 Second Of Summer</title>
+    </head>
+    <body align="center">
+        <h2>COMPLETE MESS (5SOS)</h2>
+        <button onclick="playVid()" type="button">Play Video</button> 
+        <button onclick="pauseVid()" type="button">Pause Video</button>
+        <br>
+        <video id="myVideo" width="500" height="340" controls>
+            <source src="y2mate.com - 5 Seconds of Summer  COMPLETE MESS Official Music Video_1080p.mp4" type="video/mp4">
+            <track src="5 Seconds of Summer - COMPLETE MESS (Official Music Video) - English (1).vtt" kind="subtitles" srclang="en" label="English"/>
+            <track src="[Javanese] 5 Seconds of Summer - COMPLETE MESS (Official Music Video) [DownSub.com].vtt" kind="subtitles" srclang="jv" label="Jawa"/>
+            <track src="indonesia.vtt" kind="subtitles" srclang="id" label="Indonesia"/>
+            <track src="arab.vtt" kind="subtitles" srclang="ar" label="Arab"/>
+         </video>
+        <p>Video Source : https://youtu.be/GoQ85cs5fk0</p>
+    </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid(){
+            vid.play() ;
+        }
+
+        function pauseVid(){
+            vid.pause() ;
+        }
+    </script>
+</html>
